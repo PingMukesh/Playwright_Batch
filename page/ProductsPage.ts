@@ -48,20 +48,14 @@ export class ProductsPage extends BasePage {
         }
     }
 
-    async verifyPricesDesc(testInfo: TestInfo): Promise<void> {
-        try {
-            const priceText = await this.itemPrices.allTextContents();
+    async verifyPricesDesc(): Promise<void> {        
+        const priceText = await this.itemPrices.allTextContents();
 
-            const price = priceText.map(price => Number(price.replace('$', '').trim()));
+        const price = priceText.map(price => Number(price.replace('$', '').trim()));
 
-            const sortedPriceHLo = [...price].sort((a, b) => b - a);
+        const sortedPriceHLo = [...price].sort((a, b) => b - a);
 
-            expect(price).toEqual(sortedPriceHLo);
-
-        } catch (err) {
-            await this.capturefailureScreenshot(testInfo, "Sort_option_verify_failure");
-            throw err;
-        }
+        expect(price).toEqual(sortedPriceHLo);
 
     }
 
@@ -71,27 +65,21 @@ export class ProductsPage extends BasePage {
         await product.getByRole("button", { name: "Add to cart" }).click();
     }
 
-    async verifyCartCount(expectedCount: string, testInfo: TestInfo): Promise<void> {
-        try {
-            await expect(this.cartBadge).toHaveText(expectedCount);
-        } catch (error) {
-            await this.capturefailureScreenshot(testInfo, "cart_failure");
-            throw error;
-        };
-
+    async verifyCartCount(expectedCount: string): Promise<void> {
+       await expect(this.cartBadge).toHaveText(expectedCount);
     }
 
     async openCart(): Promise<void> {
         await this.cartLink.click();
     }
 
-    async verifyProductInCart(productName: string, testInfo: TestInfo): Promise<void> {
+    async verifyProductInCart(productName: string): Promise<void> {
 
         try {
             await expect(this.page.getByText(productName, { exact: true })).toBeVisible();
         }
         catch (error) {
-            await this.capturefailureScreenshot(testInfo, "Product_not_found_in_cart");
+            // await this.capturefailureScreenshot(testInfo, "Product_not_found_in_cart");
             throw error;
         };
     }

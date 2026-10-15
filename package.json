@@ -7,14 +7,19 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cucumber-js --config cucumber.cjs",
+    "test:checkout": "cucumber-js --config cucumber.cjs --tags @checkout",
+    "test:bdd": "cucumber-js --config cucumber.cjs",
+    "test:complete-order": "cucumber-js --config cucumber.cjs --tags @complete-order"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "@cucumber/cucumber": "^13.3.0",
     "@playwright/test": "^1.63.0",
-    "typescript": "^7.0.2"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
   }
 }

@@ -1,0 +1,236 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "saucedemo-product-page;purchase-bac-from-saucedemo-app-successfully",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Purchase bac from Saucedemo app successfully",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 633711299
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 331667199
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am on the Saucedemo login page",
+            "match": {
+              "location": "features\\step-def\\login.steps.ts:4"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 104786299
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I enter the username as \"standard_user\"",
+            "match": {
+              "location": "features\\step-def\\login.steps.ts:8"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 20119300
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I enter the password as \"secret_sauce\"",
+            "match": {
+              "location": "features\\step-def\\login.steps.ts:13"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 98561800
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I click on the login button",
+            "match": {
+              "location": "features\\step-def\\login.steps.ts:18"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 141529899
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I add \"Sauce Labs Backpack\" to the cart",
+            "match": {
+              "location": "features\\step-def\\product.steps.ts:13"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 45231199
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "I open the shopping cart",
+            "match": {
+              "location": "features\\step-def\\checkout.steps.ts:5"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 13708499
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "I should see \"Sauce Labs Backpack\" in the shopping cart",
+            "match": {
+              "location": "features\\step-def\\checkout.steps.ts:11"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 57940300
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "I click on the checkout button",
+            "match": {
+              "location": "features\\step-def\\checkout.steps.ts:17"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 47515999
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "I enter the first name as \"Mukesh\" last name as \"M\" and zip code as \"123456\"",
+            "match": {
+              "location": "features\\step-def\\checkout.steps.ts:23"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 61385699
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "I click on checkout overview",
+            "match": {
+              "location": "features\\step-def\\checkout.steps.ts:29"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 7029400
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "I should see the \"Sauce Labs Backpack\" in the checkout overview",
+            "match": {
+              "location": "features\\step-def\\checkout.steps.ts:36"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 25549299
+            },
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "the subtotal tax and total should be correct",
+            "match": {
+              "location": "features\\step-def\\checkout.steps.ts:43"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 46464400
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 27,
+            "name": "I click on finish button",
+            "match": {
+              "location": "features\\step-def\\checkout.steps.ts:49"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 23788300
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "I should see the order confirmation \"Thank you for your order!\"",
+            "match": {
+              "location": "features\\step-def\\checkout.steps.ts:55"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 281767600
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Products",
+            "line": 1
+          },
+          {
+            "name": "@Checkout",
+            "line": 17
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "saucedemo-product-page",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Saucedemo Product Page",
+    "tags": [
+      {
+        "name": "@Products",
+        "line": 1
+      }
+    ],
+    "uri": "features\\product.feature"
+  }
+]
