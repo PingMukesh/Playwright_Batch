@@ -4,15 +4,15 @@
     "elements": [
       {
         "description": "",
-        "id": "saucedemo-product-page;purchase-bac-from-saucedemo-app-successfully",
+        "id": "demoqa-browser-interactions;enter-and-replace-text-using-keyboard-actions",
         "keyword": "Scenario",
-        "line": 18,
-        "name": "Purchase bac from Saucedemo app successfully",
+        "line": 13,
+        "name": "Enter and replace text using keyboard actions",
         "steps": [
           {
             "result": {
               "status": "passed",
-              "duration": 633711299
+              "duration": 433855499
             },
             "keyword": "Before",
             "hidden": true
@@ -20,189 +20,72 @@
           {
             "result": {
               "status": "passed",
-              "duration": 331667199
+              "duration": 1923451399
             },
             "arguments": [],
             "keyword": "Given ",
-            "line": 5,
-            "name": "I am on the Saucedemo login page",
+            "line": 14,
+            "name": "I open the DemoQA text box page",
             "match": {
-              "location": "features\\step-def\\login.steps.ts:4"
+              "location": "features\\step-def\\demoqa.steps.ts:39"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 104786299
+              "duration": 287216100
             },
             "arguments": [],
             "keyword": "When ",
-            "line": 6,
-            "name": "I enter the username as \"standard_user\"",
+            "line": 15,
+            "name": "I enter \"Playwright Candidate\" using the keyboard",
             "match": {
-              "location": "features\\step-def\\login.steps.ts:8"
+              "location": "features\\step-def\\demoqa.steps.ts:46"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 20119300
+              "duration": 286932600
             },
             "arguments": [],
             "keyword": "And ",
-            "line": 7,
-            "name": "I enter the password as \"secret_sauce\"",
+            "line": 16,
+            "name": "I replace the name with \"Automation Engineer\"",
             "match": {
-              "location": "features\\step-def\\login.steps.ts:13"
+              "location": "features\\step-def\\demoqa.steps.ts:53"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 98561800
+              "duration": 84530600
             },
             "arguments": [],
             "keyword": "And ",
-            "line": 8,
-            "name": "I click on the login button",
+            "line": 17,
+            "name": "I submit the text box",
             "match": {
-              "location": "features\\step-def\\login.steps.ts:18"
+              "location": "features\\step-def\\demoqa.steps.ts:60"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 141529899
-            },
-            "arguments": [],
-            "keyword": "When ",
-            "line": 19,
-            "name": "I add \"Sauce Labs Backpack\" to the cart",
-            "match": {
-              "location": "features\\step-def\\product.steps.ts:13"
-            }
-          },
-          {
-            "result": {
-              "status": "passed",
-              "duration": 45231199
-            },
-            "arguments": [],
-            "keyword": "And ",
-            "line": 20,
-            "name": "I open the shopping cart",
-            "match": {
-              "location": "features\\step-def\\checkout.steps.ts:5"
-            }
-          },
-          {
-            "result": {
-              "status": "passed",
-              "duration": 13708499
+              "duration": 21146800
             },
             "arguments": [],
             "keyword": "Then ",
-            "line": 21,
-            "name": "I should see \"Sauce Labs Backpack\" in the shopping cart",
+            "line": 18,
+            "name": "the submitted name should be \"Automation Engineer\"",
             "match": {
-              "location": "features\\step-def\\checkout.steps.ts:11"
+              "location": "features\\step-def\\demoqa.steps.ts:67"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 57940300
-            },
-            "arguments": [],
-            "keyword": "When ",
-            "line": 22,
-            "name": "I click on the checkout button",
-            "match": {
-              "location": "features\\step-def\\checkout.steps.ts:17"
-            }
-          },
-          {
-            "result": {
-              "status": "passed",
-              "duration": 47515999
-            },
-            "arguments": [],
-            "keyword": "And ",
-            "line": 23,
-            "name": "I enter the first name as \"Mukesh\" last name as \"M\" and zip code as \"123456\"",
-            "match": {
-              "location": "features\\step-def\\checkout.steps.ts:23"
-            }
-          },
-          {
-            "result": {
-              "status": "passed",
-              "duration": 61385699
-            },
-            "arguments": [],
-            "keyword": "And ",
-            "line": 24,
-            "name": "I click on checkout overview",
-            "match": {
-              "location": "features\\step-def\\checkout.steps.ts:29"
-            }
-          },
-          {
-            "result": {
-              "status": "passed",
-              "duration": 7029400
-            },
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 25,
-            "name": "I should see the \"Sauce Labs Backpack\" in the checkout overview",
-            "match": {
-              "location": "features\\step-def\\checkout.steps.ts:36"
-            }
-          },
-          {
-            "result": {
-              "status": "passed",
-              "duration": 25549299
-            },
-            "arguments": [],
-            "keyword": "And ",
-            "line": 26,
-            "name": "the subtotal tax and total should be correct",
-            "match": {
-              "location": "features\\step-def\\checkout.steps.ts:43"
-            }
-          },
-          {
-            "result": {
-              "status": "passed",
-              "duration": 46464400
-            },
-            "arguments": [],
-            "keyword": "When ",
-            "line": 27,
-            "name": "I click on finish button",
-            "match": {
-              "location": "features\\step-def\\checkout.steps.ts:49"
-            }
-          },
-          {
-            "result": {
-              "status": "passed",
-              "duration": 23788300
-            },
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 28,
-            "name": "I should see the order confirmation \"Thank you for your order!\"",
-            "match": {
-              "location": "features\\step-def\\checkout.steps.ts:55"
-            }
-          },
-          {
-            "result": {
-              "status": "passed",
-              "duration": 281767600
+              "duration": 238974799
             },
             "keyword": "After",
             "hidden": true
@@ -210,27 +93,27 @@
         ],
         "tags": [
           {
-            "name": "@Products",
+            "name": "@demoqa",
             "line": 1
           },
           {
-            "name": "@Checkout",
-            "line": 17
+            "name": "@keyboard",
+            "line": 12
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "saucedemo-product-page",
+    "id": "demoqa-browser-interactions",
     "line": 2,
     "keyword": "Feature",
-    "name": "Saucedemo Product Page",
+    "name": "DemoQA Browser Interactions",
     "tags": [
       {
-        "name": "@Products",
+        "name": "@demoqa",
         "line": 1
       }
     ],
-    "uri": "features\\product.feature"
+    "uri": "features\\demoqa.feature"
   }
 ]

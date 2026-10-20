@@ -1,15 +1,15 @@
 import path from "node:path"
-import {spawnSync} from "node:child_process"
+import { spawnSync } from "node:child_process"
 
-class Runner{
+class Runner {
 
-    private readonly tags:string = "@Checkout";
+    private readonly tags: string = "@keyboard";
 
-    public run(): void{
+    public run(): void {
 
-       const cucumberPath = path.resolve("node_modules/@cucumber/cucumber/bin/cucumber.js");
+        const cucumberPath = path.resolve("node_modules/@cucumber/cucumber/bin/cucumber.js");
         const result = spawnSync(
-            process.execPath,[cucumberPath, "--config", "cucumber.cjs", "--tags", this.tags],       
+            process.execPath, [cucumberPath, "--config", "cucumber.cjs", "--tags", this.tags],
             {
                 stdio: "inherit",
                 shell: false
@@ -17,15 +17,15 @@ class Runner{
         );
 
 
-       if(result.error){
-        console.error("Failed to Start the Cucumber:",result.error);
-        process.exitCode = 1;
-        return;
-       }
+        if (result.error) {
+            console.error("Failed to Start the Cucumber:", result.error);
+            process.exitCode = 1;
+            return;
+        }
 
-       if(result.status !==0){
-        process.exitCode = result.status ?? 1;
-       }
+        if (result.status !== 0) {
+            process.exitCode = result.status ?? 1;
+        }
     }
 
 }

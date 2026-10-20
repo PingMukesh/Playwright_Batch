@@ -3,13 +3,15 @@ import { LoginPage } from "../../page/LoginPage";
 import { ProductsPage } from "../../page/ProductsPage";
 import { Browser, Page } from "@playwright/test";
 import { CheckoutPage } from "../../page/CheckoutPage";
+import { DemoQAPage } from "../../page/DemoQAPage";
 
 
-export class CustomWorld extends World{
+export class CustomWorld extends World {
     browser!: Browser;
     page!: Page;
     loginPage!: LoginPage;
-    productsPage!: ProductsPage; 
-    checkoutPage!: CheckoutPage;   
+    productsPage!: ProductsPage;
+    checkoutPage!: CheckoutPage;
+    demoQAPage!: DemoQAPage;
 }
 setWorldConstructor(CustomWorld);

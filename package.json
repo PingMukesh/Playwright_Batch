@@ -10,6 +10,7 @@
     "test": "cucumber-js --config cucumber.cjs",
     "test:checkout": "cucumber-js --config cucumber.cjs --tags @checkout",
     "test:bdd": "cucumber-js --config cucumber.cjs",
+    "test:runner": "ts-node runner/Runner.ts",
     "test:complete-order": "cucumber-js --config cucumber.cjs --tags @complete-order"
   },
   "keywords": [],
