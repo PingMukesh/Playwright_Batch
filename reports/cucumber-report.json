@@ -12,7 +12,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 433855499
+              "duration": 454664499
             },
             "keyword": "Before",
             "hidden": true
@@ -20,7 +20,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 1923451399
+              "duration": 1841865200
             },
             "arguments": [],
             "keyword": "Given ",
@@ -33,7 +33,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 287216100
+              "duration": 621510999
             },
             "arguments": [],
             "keyword": "When ",
@@ -46,7 +46,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 286932600
+              "duration": 172210500
             },
             "arguments": [],
             "keyword": "And ",
@@ -59,7 +59,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 84530600
+              "duration": 49395300
             },
             "arguments": [],
             "keyword": "And ",
@@ -72,7 +72,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 21146800
+              "duration": 20670000
             },
             "arguments": [],
             "keyword": "Then ",
@@ -85,7 +85,7 @@
           {
             "result": {
               "status": "passed",
-              "duration": 238974799
+              "duration": 197250799
             },
             "keyword": "After",
             "hidden": true

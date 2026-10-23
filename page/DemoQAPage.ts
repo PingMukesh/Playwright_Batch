@@ -7,7 +7,7 @@ export class DemoQAPage extends BasePage {
     private fullName = this.page.locator("#userName");
     private submitButton = this.page.locator("#submit");
     private nameOutput = this.page.locator("#name");
-    private URL: String = "https://demoqa.com/";
+    private URL: string = "https://demoqa.com/";
 
     constructor(page: Page) {
         super(page);
