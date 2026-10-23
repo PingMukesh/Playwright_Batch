@@ -70,3 +70,75 @@ Then(
         await this.demoQAPage.verifySubmittedName(name);
     }
 );
+
+Given("I open the DemoQA alerts page",
+    async function (this: CustomWorld) {
+        await this.demoQAPage.openAlerts();
+    }
+);
+
+When("I click the alert button",
+    async function (this: CustomWorld) {
+        await this.demoQAPage.handleSimpleAlert();
+    }
+);
+
+Then("I  accept the confirmation alert",
+    async function (this: CustomWorld) {
+        await this.demoQAPage.HandleConfirmAlert();
+    }
+);
+
+When("I enter {string} into the prompt alert",
+    async function (this: CustomWorld, name: string) {
+        await this.demoQAPage.handlePromptAlert(name);
+    }
+);
+
+Then("the prompt result should contain {string}",
+    async function (this: CustomWorld, name: string) {
+        await this.demoQAPage.verifyPromptResult(name);
+    }
+);
+
+Given("I open the DemoQA Browser windows page",
+    async function (this: CustomWorld) {
+        await this.demoQAPage.openBrowserWindows();
+    }
+);
+
+When("I open a New browser tab",
+    async function (this: CustomWorld) {
+        await this.demoQAPage.openandVerifyNewTab();
+    }
+);
+
+
+Then("the new tab should display the sample page",
+    async function (this: CustomWorld) {
+        await this.demoQAPage.verifyNewTab();
+    }
+);
+
+
+Given("I open the DemoQA iframe page",
+    async function (this: CustomWorld) {
+        await this.demoQAPage.openFrame();
+    }
+);
+
+Then("the frame should display the sample heading",
+    async function (this: CustomWorld) {
+        await this.demoQAPage.VerifyFrametext();
+    }
+);
+
+
+Given("I open the accordian page",
+    async function (this: CustomWorld) {
+        await this.demoQAPage.accordianPage();
+    }
+);
+
+
+

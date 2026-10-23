@@ -3,7 +3,7 @@ import { spawnSync } from "node:child_process"
 
 class Runner {
 
-    private readonly tags: string = "@keyboard";
+    private readonly tags: string = "@frames";
 
     public run(): void {
 

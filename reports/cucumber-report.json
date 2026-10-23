@@ -4,15 +4,15 @@
     "elements": [
       {
         "description": "",
-        "id": "demoqa-browser-interactions;enter-and-replace-text-using-keyboard-actions",
+        "id": "demoqa-browser-interactions;verify-tge-content-inside-an-iframe",
         "keyword": "Scenario",
-        "line": 13,
-        "name": "Enter and replace text using keyboard actions",
+        "line": 37,
+        "name": "Verify tge content inside an iframe",
         "steps": [
           {
             "result": {
               "status": "passed",
-              "duration": 454664499
+              "duration": 471666699
             },
             "keyword": "Before",
             "hidden": true
@@ -20,72 +20,33 @@
           {
             "result": {
               "status": "passed",
-              "duration": 1841865200
+              "duration": 4878799500
             },
             "arguments": [],
             "keyword": "Given ",
-            "line": 14,
-            "name": "I open the DemoQA text box page",
+            "line": 38,
+            "name": "I open the DemoQA iframe page",
             "match": {
-              "location": "features\\step-def\\demoqa.steps.ts:39"
+              "location": "features\\step-def\\demoqa.steps.ts:124"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 621510999
-            },
-            "arguments": [],
-            "keyword": "When ",
-            "line": 15,
-            "name": "I enter \"Playwright Candidate\" using the keyboard",
-            "match": {
-              "location": "features\\step-def\\demoqa.steps.ts:46"
-            }
-          },
-          {
-            "result": {
-              "status": "passed",
-              "duration": 172210500
-            },
-            "arguments": [],
-            "keyword": "And ",
-            "line": 16,
-            "name": "I replace the name with \"Automation Engineer\"",
-            "match": {
-              "location": "features\\step-def\\demoqa.steps.ts:53"
-            }
-          },
-          {
-            "result": {
-              "status": "passed",
-              "duration": 49395300
-            },
-            "arguments": [],
-            "keyword": "And ",
-            "line": 17,
-            "name": "I submit the text box",
-            "match": {
-              "location": "features\\step-def\\demoqa.steps.ts:60"
-            }
-          },
-          {
-            "result": {
-              "status": "passed",
-              "duration": 20670000
+              "duration": 217783999
             },
             "arguments": [],
             "keyword": "Then ",
-            "line": 18,
-            "name": "the submitted name should be \"Automation Engineer\"",
+            "line": 39,
+            "name": "the frame should display the sample heading",
             "match": {
-              "location": "features\\step-def\\demoqa.steps.ts:67"
+              "location": "features\\step-def\\demoqa.steps.ts:130"
             }
           },
           {
             "result": {
               "status": "passed",
-              "duration": 197250799
+              "duration": 289300299
             },
             "keyword": "After",
             "hidden": true
@@ -97,8 +58,8 @@
             "line": 1
           },
           {
-            "name": "@keyboard",
-            "line": 12
+            "name": "@frames",
+            "line": 36
           }
         ],
         "type": "scenario"
